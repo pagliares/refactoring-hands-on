@@ -17,7 +17,7 @@ public class Locacao {
         return _filme;
     }
 
-    public double quantiaDe() {
+    public double lerPreco() {
         double resultado = 0.0;
         // Valor da locacao para cada filme dentro do Vector
         switch (lerFilme().lerCodigoPreco()) { // codigoPreco associado ao tipo do filme

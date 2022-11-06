@@ -28,7 +28,7 @@ public class Cliente {
             double estaQuantia = 0;
             Locacao cada = (Locacao) locacoes.nextElement();
 
-            estaQuantia = cada.quantiaDe();
+            estaQuantia = cada.lerPreco();
             pontosLocadorFrequente++;
             // Ponto adicional para o locatario para cada filme lancamento
             if ((cada.lerFilme().lerCodigoPreco() == Filme.LANCAMENTO_NOVO)
