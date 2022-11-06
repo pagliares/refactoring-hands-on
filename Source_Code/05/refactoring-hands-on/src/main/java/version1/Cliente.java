@@ -28,7 +28,7 @@ public class Cliente {
             double estaQuantia = 0;
             Locacao cada = (Locacao) locacoes.nextElement();
 
-            pontosLocadorFrequente = lerPontosLocadorFrequente(cada);
+            pontosLocadorFrequente = cada.lerPontosLocadorFrequente();
 
             //armazena o valor do filme para cada filme locado
             resultado += "\t" + cada.lerFilme().lerTitulo() + "\t"
@@ -41,14 +41,6 @@ public class Cliente {
         resultado += "Pontos adquiridos na locacao : " + String.valueOf(pontosLocadorFrequente);
         return resultado;
 
-    }
-
-    public int lerPontosLocadorFrequente(Locacao cada) {
-        if ((cada.lerFilme().lerCodigoPreco() == Filme.LANCAMENTO_NOVO)
-                && cada.lerDiasAlugados() > 1) {
-            return 2;
-        }
-        return 1;
     }
 
 }
