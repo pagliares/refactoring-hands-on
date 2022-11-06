@@ -28,7 +28,6 @@ public class Cliente {
             double estaQuantia = 0;
             Locacao cada = (Locacao) locacoes.nextElement();
 
-            estaQuantia = cada.lerPreco();
             pontosLocadorFrequente++;
             // Ponto adicional para o locatario para cada filme lancamento
             if ((cada.lerFilme().lerCodigoPreco() == Filme.LANCAMENTO_NOVO)
@@ -38,8 +37,8 @@ public class Cliente {
 
             //armazena o valor do filme para cada filme locado
             resultado += "\t" + cada.lerFilme().lerTitulo() + "\t"
-                    + String.valueOf(estaQuantia) + "\n";
-            quantiaTotal += estaQuantia;  // total da locacao
+                    + String.valueOf(cada.lerPreco()) + "\n";
+            quantiaTotal += cada.lerPreco();  // total da locacao
 
          }
         //adiciona o rodape
