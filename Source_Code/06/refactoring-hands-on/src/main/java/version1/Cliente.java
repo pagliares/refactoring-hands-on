@@ -60,7 +60,7 @@ public class Cliente {
             Locacao cada = (Locacao) l.nextElement();
             resultado+= cada.lerPontosLocadorFrequente();
         }
-        
+
         return resultado;
     }
 }
