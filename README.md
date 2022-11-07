@@ -56,3 +56,19 @@ FIfth version of the example. In this version, we apply again the refactoring Ex
 <p align="center">
     <img src="UML_Diagrams/05/Sequence_Diagram.png" alt="UML Class diagram">
 </p>
+
+
+## 06 - refactoring-hands-on
+
+Sixth version of the example. In this example, we apply the refactoring Replace Temp with Query to the previous version of the code. This is a type of refactoring that is not alwasy feasible due performance issues, since it demands calling a method each time it is needed instead of calling it once and storing the result in a temp variable. For simple methods like the one used in this example,  performance is not an issue, but for some complex and time consuming methods, the reafactoring Replace Temp with Query would probably not be recommended.
+
+### UML Class Diagram:
+
+<p align="center">
+    <img src="UML_Diagrams/06/Class_Diagram.png" alt="UML Class diagram">
+</p>
+
+### UML Sequence Diagram:
+<p align="center">
+    <img src="UML_Diagrams/06/Sequence_Diagram.png" alt="UML Class diagram">
+</p>
