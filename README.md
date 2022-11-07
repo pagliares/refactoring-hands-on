@@ -74,3 +74,13 @@ The advantage in our example relies on separation of concerns, reducing the line
 <p align="center">
     <img src="UML_Diagrams/06/Sequence_Diagram.png" alt="UML Class diagram">
 </p>
+
+## 07 - refactoring-hands-on
+
+Seventh version of the example. In this example, we finally decide to implement the new requirement of outputing the invoice with rental details in HTML format. During the hand-on in loco, I demonstrate this by using TDD.   
+
+This example improves the implementation of the test case used to test the output to the console and now the html output by removing the white spaces within the expected and solution produced Strings ( \\s in the code below, means single character in UNICODE).
+
+        assertEquals(saidaEsperadaHTMLSemEspacos, rodrigo.contaHTML().replaceAll("\\s", ""));
+
+
