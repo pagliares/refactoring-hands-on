@@ -138,7 +138,7 @@ public class RefactoringHandsOnTest {
         assertTrue(rodrigo.conta().contains("Pontos adquiridos na locacao : 1"));
     }
 
-    
+
     @Test
     public void alugarUmFilmeInfantilPor4DiasDeveCustar3ReaisSendo1RealE50CentavosDeMultaEGerar1PontoLocadorFrequente() {
 
