@@ -1,4 +1,4 @@
-package version1;
+package xyz.pagliares.refactoring.entities;
 
 public class Locacao {
     private Filme _filme;

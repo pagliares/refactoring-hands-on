@@ -1,9 +1,13 @@
-package version1;
-
-import static org.junit.jupiter.api.Assertions.*;
+package xyz.pagliares.refactoring.entities;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import xyz.pagliares.refactoring.entities.Cliente;
+import xyz.pagliares.refactoring.entities.Filme;
+import xyz.pagliares.refactoring.entities.Locacao;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RefactoringHandsOnTest {
     private Cliente cliente;

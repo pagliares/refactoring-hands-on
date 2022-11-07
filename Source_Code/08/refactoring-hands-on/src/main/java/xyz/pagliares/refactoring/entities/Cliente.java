@@ -1,4 +1,4 @@
-package version1;
+package xyz.pagliares.refactoring.entities;
 
 import java.util.Enumeration;
 import java.util.Vector;
