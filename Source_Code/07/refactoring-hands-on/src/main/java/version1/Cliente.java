@@ -39,6 +39,30 @@ public class Cliente {
 
     }
 
+    public String contaHTML() {
+
+        Enumeration locacoes = _locacoes.elements();
+        String resultado = "<h1>Registro de Locacao para <em>" + lerNome() + "</em></h1>\n"
+                + "<ul>\n";
+
+        while (locacoes.hasMoreElements()) {
+            Locacao cada = (Locacao) locacoes.nextElement();
+
+            //armazena o valor do filme para cada filme locado
+            resultado += "\t" + "<li>" +cada.lerFilme().lerTitulo() + "\t"
+                    + String.valueOf(cada.lerPreco()) + "</li>\n";
+        }
+
+        resultado+="</ul>\n";
+
+        //adiciona o rodape
+        resultado += "<p>Total devido, <em>R$ " + String.valueOf(lerPrecoTotal()) + "</em></p>\n";
+        resultado += "<p>Pontos adquiridos na locação: <em>" + String.valueOf(lerTotalPontosLocadorFrequente()+ "</em></p>");
+
+        return resultado;
+
+    }
+
     public double lerPrecoTotal() {
 
         double resultado = 0.0;
