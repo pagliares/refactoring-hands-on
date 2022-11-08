@@ -15,8 +15,8 @@ public class Filme {
        gravarCodigoPreco(codigoPreco);
    }
 
-   public Preco lerCodigoPreco() {
-       return _codigoPreco;
+   public int lerCodigoPreco() {
+       return _codigoPreco.lerCodigoPreco();
    }
 
    public void gravarCodigoPreco(int codigoPreco) {
