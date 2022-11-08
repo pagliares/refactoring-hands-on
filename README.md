@@ -83,6 +83,10 @@ This example improves the implementation of the test case used to test the outpu
 
         assertEquals(saidaEsperadaHTMLSemEspacos, rodrigo.contaHTML().replaceAll("\\s", ""));
 
+### UML Class Diagram:
+<p align="center">
+    <img src="UML_Diagrams/07/Class_Diagram.png" alt="UML Class diagram">
+</p>
 
 ## 08 - refactoring-hands-on
 
