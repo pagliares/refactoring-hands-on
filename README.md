@@ -92,6 +92,11 @@ This example improves the implementation of the test case used to test the outpu
 
 Eighth version of the example. In this example, we apply the refactoring Move Method twice: to move the methods lerPreco e lerPontosLocadorFrequente to the Filme class, keeping the original methods delegating to the new ones.
 
+### UML Class Diagram:
+<p align="center">
+    <img src="UML_Diagrams/08/Class_Diagram.png" alt="UML Class diagram">
+</p>
+
 ## 09 - refactoring-hands-on
 
 Nineth version of the example. This version is divided into 3 parts. 
