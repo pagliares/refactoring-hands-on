@@ -103,12 +103,16 @@ Nineth version of the example. This version is divided into 3 parts.
 
 ### 09.1 - refactoring-hands-on
 
+This version uses the design principle "Encapsulate what varies" in order to encapsulate the code of the movies in its own hierarchy (class Preco).
+
 #### UML Class Diagram:
 <p align="center">
     <img src="UML_Diagrams/09/09_01/Class_Diagram.png" alt="UML Class diagram">
 </p>
 
 ### 09.2 - refactoring-hands-on
+
+This version uses the Move Method Refactoring. It moves the method lerPreco to Class Preco. a method with same signature still remains in class Filme, but it only delegates to the method lerPreco(int diasAlugados) on class Preco.
 
 #### UML Class Diagram:
 <p align="center">
