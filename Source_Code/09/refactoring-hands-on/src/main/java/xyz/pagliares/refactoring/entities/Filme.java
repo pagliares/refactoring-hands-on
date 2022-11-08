@@ -7,20 +7,33 @@ public class Filme {
     public static final int  INFANTIL = 2; // R$ 1,50
 
    private String _titulo;
-   private int _codigoPreco; // codigoPreco contem uma das constantes acima
+
+    private Preco _codigoPreco;
 
    public Filme(String titulo, int codigoPreco) {
        this._titulo = titulo;
-       this._codigoPreco = codigoPreco;
+       gravarCodigoPreco(codigoPreco);
    }
 
-   public int lerCodigoPreco() {
+   public Preco lerCodigoPreco() {
        return _codigoPreco;
    }
 
    public void gravarCodigoPreco(int codigoPreco) {
-     this._codigoPreco = codigoPreco;
-   }
+       switch (codigoPreco) { // codigoPreco associado ao tipo do filme
+           case Filme.NORMAL:
+               _codigoPreco = new PrecoNormal();
+               break;
+           case Filme.LANCAMENTO_NOVO:
+               _codigoPreco = new PrecoLancamento();
+               break;
+           case Filme.INFANTIL:
+               _codigoPreco = new PrecoInfantil();
+               break;
+           default:
+               throw new IllegalArgumentException("Código de preço incorreto");
+       }
+    }
 
    public String lerTitulo (){
        return _titulo;
@@ -29,7 +42,7 @@ public class Filme {
     public double lerPreco(int diasAlugados) {
         double resultado = 0.0;
         // Valor da locacao para cada filme dentro do Vector
-        switch (_codigoPreco) { // codigoPreco associado ao tipo do filme
+        switch (_codigoPreco.lerCodigoPreco()) { // codigoPreco associado ao tipo do filme
             case Filme.NORMAL:
                 resultado += 2;  // R$ 2,00 por filme normal alugado
                 if (diasAlugados > 2) { // Multa de 1.50 por dia de atraso caso seja entregue apos 2 dias
@@ -50,7 +63,7 @@ public class Filme {
     }
 
     public int lerPontosLocadorFrequente(int numDiasAlugado) {
-        if (_codigoPreco == Filme.LANCAMENTO_NOVO && numDiasAlugado > 1) {
+        if (_codigoPreco.lerCodigoPreco() == Filme.LANCAMENTO_NOVO && numDiasAlugado > 1) {
             return 2;
         }
         return 1;
