@@ -109,6 +109,12 @@ Nineth version of the example. This version is divided into 3 parts.
 </p>
 
 ### 09.2 - refactoring-hands-on
+
+#### UML Class Diagram:
+<p align="center">
+    <img src="UML_Diagrams/09/09_02/Class_Diagram.png" alt="UML Class diagram">
+</p>
+
 ### 09.3 - refactoring-hands-on
 
 
