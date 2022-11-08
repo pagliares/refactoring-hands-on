@@ -121,4 +121,4 @@ This version uses the Move Method Refactoring. It moves the method lerPreco to C
 
 ### 09.3 - refactoring-hands-on
 
-
+This version applies the refactoring Replace Conditional with Polymorfism. After aplying the third refactoring, we derive a design pattern (State or Strategy, depending on how you are viewing the problem - family of algorithms to calculate rental amount our a state of a movie in a particular moment).
