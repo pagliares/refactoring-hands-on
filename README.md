@@ -87,3 +87,13 @@ This example improves the implementation of the test case used to test the outpu
 ## 08 - refactoring-hands-on
 
 Eighth version of the example. In this example, we apply the refactoring Move Method twice: to move the methods lerPreco e lerPontosLocadorFrequente to the Filme class, keeping the original methods delegating to the new ones.
+
+## 09 - refactoring-hands-on
+
+Nineth version of the example. This version is divided into 3 parts. 
+
+### 09.1 - refactoring-hands-on
+### 09.2 - refactoring-hands-on
+### 09.3 - refactoring-hands-on
+
+
