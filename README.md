@@ -102,6 +102,12 @@ Eighth version of the example. In this example, we apply the refactoring Move Me
 Nineth version of the example. This version is divided into 3 parts. 
 
 ### 09.1 - refactoring-hands-on
+
+#### UML Class Diagram:
+<p align="center">
+    <img src="UML_Diagrams/09/09_01/Class_Diagram.png" alt="UML Class diagram">
+</p>
+
 ### 09.2 - refactoring-hands-on
 ### 09.3 - refactoring-hands-on
 
