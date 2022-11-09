@@ -127,3 +127,9 @@ This version applies the refactoring Replace Conditional with Polymorfism. The r
 <p align="center">
     <img src="UML_Diagrams/09/09_03/Class_Diagram.png" alt="UML Class diagram">
 </p>
+
+### 09.4 - refactoring-hands-on
+
+This version uses (again) the Move Method Refactoring. It moves the method lerPontosLocadorFrequente(int diasAlugados) of class Filme to Class Preco. A method with same signature still remains in class Filme, but it only delegates to the method lerPontosLocadorFrequente(int diasAlugados) on class Preco. 
+
+Since the implementation only differs for new releases (lançamentos), the method lerPontosLocadorFrequente(int diasAlugados) in the superclass is not abstract. It is overriden onlly in the PrecoNormal class.
