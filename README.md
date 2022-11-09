@@ -1,6 +1,10 @@
 # Refactoring hands-on
 
-Repository with source code of examples used in the refactoring hands-on taught by Rodrigo Martins Pagliares at UNIFAL-MG.
+Repository with source code of examples used in the refactoring hands-on taught by Rodrigo Martins Pagliares at UNIFAL-MG. 
+
+During the hands-on, an initial functional project (## 01 - refactoring-hands-on) is evolved to implement a new requirement (generate a rental statement in HTML format). Since the initial project has a bad design, the developer decided to first refactor the existing code (versions 02 to 06 in this repository) before implementing the new requirement (version 07 of this repository). 
+
+After finish implementing the requirement (code on ## 07 - refactoring-hands-on), the owner of the rental store notify us that they are planning to request an implementation of a new requirement (the inclusion of Musical Movies with its own price and rules for frequent renter points). This motivate us to keep refactoring the code (versions 08, 09.01, 09.02, 09.03, and 09.04 in this repository) to improve its design in order to ease accomodate this new requirements in a near future (This is implementation is left as exercise for the students during the hands-on).
 
 ## 01 - refactoring-hands-on
 
