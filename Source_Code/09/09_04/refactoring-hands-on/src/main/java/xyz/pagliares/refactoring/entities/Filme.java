@@ -44,10 +44,7 @@ public class Filme {
     }
 
     public int lerPontosLocadorFrequente(int numDiasAlugado) {
-        if (_codigoPreco.lerCodigoPreco() == Filme.LANCAMENTO_NOVO && numDiasAlugado > 1) {
-            return 2;
-        }
-        return 1;
+       return _codigoPreco.lerPontosLocadorFrequente(numDiasAlugado);
     }
  }
 

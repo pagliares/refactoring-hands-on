@@ -11,4 +11,8 @@ public class PrecoLancamento extends Preco{
     public double lerPreco(int diasAlugados) {
         return diasAlugados * 3; // R$ 3,00 a diaria para lancamentos  por filme alugado
     }
+
+    public int lerPontosLocadorFrequente(int numDiasAlugado) {
+        return (numDiasAlugado > 1)? 2:1;
+     }
 }
