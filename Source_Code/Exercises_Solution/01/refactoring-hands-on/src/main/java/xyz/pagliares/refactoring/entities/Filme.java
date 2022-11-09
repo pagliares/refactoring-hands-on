@@ -6,7 +6,9 @@ public class Filme {
    public static final int  LANCAMENTO_NOVO = 1; // R$ 3,00
     public static final int  INFANTIL = 2; // R$ 1,50
 
-   private String _titulo;
+    public static final int  MUSICAL = 3; // R$ 2,00
+
+    private String _titulo;
 
     private Preco _codigoPreco;
 
@@ -29,6 +31,9 @@ public class Filme {
                break;
            case Filme.INFANTIL:
                _codigoPreco = new PrecoInfantil();
+               break;
+           case Filme.MUSICAL:
+               _codigoPreco = new PrecoMusical();
                break;
            default:
                throw new IllegalArgumentException("Código de preço incorreto");

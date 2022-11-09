@@ -26,9 +26,10 @@ public class RefactoringHandsOnTest {
                 + "\t<li>Paris, Texas             	3.5 </li>\n"
                 + "\t<li>Bravura Indômita           	3.0 </li>\n"
                 + "\t<li>Shrek                       3.0 </li>\n"
+                + "\t<li>Hair                       2.0 </li>\n"
                 + "</ul>\n"
-                + "<p>Total devido, <em>R$ 25.0</em></p>\n"
-                + "<p>Pontos adquiridos na locação: <em>6</em></p>\n";
+                + "<p>Total devido, <em>R$ 27.0</em></p>\n"
+                + "<p>Pontos adquiridos na locação: <em>7</em></p>\n";
 
         String saidaEsperadaHTMLSemEspacos = saidaEsperadaHTML.replaceAll("\\s", ""); //  \\s is a single space in unicode
 
@@ -51,11 +52,16 @@ public class RefactoringHandsOnTest {
         Filme shrek = new Filme("Shrek                         ", 2);
         Locacao loc5 = new Locacao(shrek, 4);
 
+        // Sexto filme sendo locado(musical) (Resultado = R$ 2,00 locacao + R$ 1,50 de multa - Total parcial = R$ 3,50)
+        Filme hair = new Filme("Hair                         ", 3);
+        Locacao loc6 = new Locacao(hair, 2);
+
         cliente.adicionarLocacao(loc1);
         cliente.adicionarLocacao(loc2);
         cliente.adicionarLocacao(loc3);
         cliente.adicionarLocacao(loc4);
         cliente.adicionarLocacao(loc5);
+        cliente.adicionarLocacao(loc6);
 
         assertEquals(saidaEsperadaHTMLSemEspacos, cliente.contaHTML().replaceAll("\\s", ""));
     }
@@ -68,8 +74,9 @@ public class RefactoringHandsOnTest {
                 + "\tParis, Texas             	3.5\n"
                 + "\tBravura Indômita           	3.0\n"
                 + "\tShrek                         	3.0\n"
-                + "Total devido, R$ 25.0\n"
-                + "Pontos adquiridos na locacao : 6\n";
+                + "\tHair                         	2.0\n"
+                + "Total devido, R$ 27.0\n"
+                + "Pontos adquiridos na locacao : 7\n";
 
         String saidaEsperadaSemEspacos = saidaEsperadaTemp.replaceAll("\\s", ""); //  \\s is a single space in unicode
 
@@ -92,11 +99,17 @@ public class RefactoringHandsOnTest {
         Filme shrek = new Filme("Shrek                         ", 2);
         Locacao loc5 = new Locacao(shrek, 4);
 
+        // Sexto filme sendo locado(musical) (Resultado = R$ 2,00 locacao + R$ 1,50 de multa - Total parcial = R$ 3,50)
+        Filme hair = new Filme("Hair                         ", 3);
+        Locacao loc6 = new Locacao(hair, 2);
+
         cliente.adicionarLocacao(loc1);
         cliente.adicionarLocacao(loc2);
         cliente.adicionarLocacao(loc3);
         cliente.adicionarLocacao(loc4);
         cliente.adicionarLocacao(loc5);
+        cliente.adicionarLocacao(loc6);
+
 
         assertEquals(saidaEsperadaSemEspacos, cliente.conta().replaceAll("\\s", ""));
      }
