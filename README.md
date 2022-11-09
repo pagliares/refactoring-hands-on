@@ -128,11 +128,15 @@ This version applies the refactoring Replace Conditional with Polymorfism. The r
     <img src="UML_Diagrams/09/09_03/Class_Diagram.png" alt="UML Class diagram">
 </p>
 
-### 09.4 - refactoring-hands-on
+### 09.4 - refactoring-hands-on (FINAL VERSION ON THIS HANDS-ON)
 
-This version uses (again) the Move Method Refactoring. It moves the method lerPontosLocadorFrequente(int diasAlugados) of class Filme to Class Preco. A method with same signature still remains in class Filme, but it only delegates to the method lerPontosLocadorFrequente(int diasAlugados) on class Preco. 
+This final version of this Hands-on. It uses (again) the Move Method Refactoring as an intermediary step towards the State/Strategy design patterns. 
 
-Since the implementation only differs for new releases (lançamentos), the method lerPontosLocadorFrequente(int diasAlugados) in the superclass is not abstract. It is overriden onlly in the PrecoNormal class.
+This version It moves the method lerPontosLocadorFrequente(int diasAlugados) of class Filme to Class Preco. A method with same signature still remains in class Filme, but it only delegates to the method lerPontosLocadorFrequente(int diasAlugados) on class Preco. 
+
+Since the implementation only differs for new releases (lançamentos), the method lerPontosLocadorFrequente(int diasAlugados) in the superclass is not abstract. It is overriden only in the PrecoNormal class.
+
+I strongly suggest the students compare the UML Class and Sequence Diagrams of this version with the Diagrams of version 1 of this hands-on. The program does the same, but as you can see, with a completely new design. 
 
 ### UML Class Diagram:
 
