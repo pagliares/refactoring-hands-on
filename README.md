@@ -163,6 +163,17 @@ I strongly suggest the students compare the UML Class and Sequence Diagrams of t
 
 Tenth version of the example. In this version we apply the Rename refactoring to translate all identifiers (class name, methods, attributes, etc) to english in order to align with the ideintiers used in Chapter 1 of the original textbook (written in english). 
 
+### UML Class Diagram:
+
+<p align="center">
+    <img src="UML_Diagrams/10/Class_Diagram.png" alt="UML Class diagram">
+</p>
+
+### UML Sequence Diagram:
+<p align="center">
+    <img src="UML_Diagrams/10/Sequence_Diagram.png" alt="UML Sequence diagram">
+</p>
+
 ## Exercise 01 - refactoring-hands-on
 
 In this exercise, the student must evolve version 09.4 of the software to incorporate one more type of movie: Musical. Musical films cost R$ 2.00 per rental with the right to keep the film for 2 days. For Musical type movies, the fine and frequent rental points are calculated as follows:
