@@ -162,5 +162,8 @@ In this exercise, the student must evolve version 09.4 of the software to incorp
    - Each rented movie counts 1 frequent renter point.
 
 The solution for the exercise is presented at the Maven Project located at folder Source_Code/Exercise_Solution/01/refactoring-hands-on.
-   
+
+## Exercise 02 - refactoring-hands-on
+
+In this exercise, the student must evolve version 8 of the software to implement an alternative solution (different from solutions for versions 09.1, 09.2, 09.3, and 09.4). In this exercise, the student must implement the design shown in the UML class diagram below.   
 
