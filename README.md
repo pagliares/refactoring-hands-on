@@ -1,6 +1,6 @@
 # Refactoring hands-on
 
-Repository with source code of examples and exercises used in the refactoring hands-on taught by Rodrigo Martins Pagliares at UNIFAL-MG. There in toal 14 Maven projects in this repository (folder Source_Code) used as examples during the hands-on and 2 Maven Projects with solution for the exercies. The examples are based on Martin Fowler's seminal book "Refactoring - Improving the design of existing code", first edition.
+Repository with source code of examples and exercises used in the refactoring hands-on taught by Rodrigo Martins Pagliares at UNIFAL-MG. There in total 15 Maven projects in this repository (folder Source_Code) used as examples during the hands-on and 2 Maven Projects with solution for the exercies. The examples are based on Martin Fowler's seminal book "Refactoring - Improving the design of existing code", first edition.
 
 In the examples, starting at project 01, each project builds upon the previous one, allowing the students access to any part of this hands-on. Each project is configured to use JUnit 5 (via pom.xml) and can be imported to the IDE of your choice (I use IntelliJ Ultimate Edition).
 
@@ -10,7 +10,7 @@ After finish implementing the requirement (code on ## 07 - refactoring-hands-on)
 
 The tenth example is a version with identifiers in english instead of portuguese (Rename refactorings). The refactorings presented on versions starting at example 11 are not on Martin Fowler's book (I implemented them in order to reflect the evolution of the Java language). For example, the collection class Vector used in the book became obsolet several years ago. Version 12 replaces Vector to ArrayList with generics.
 
-In what follows, I present more details about the 13 maven projects found in the Source_Code folder of this repository.
+In what follows, I present more details about the 15 Apache Maven projects (examples) and the 2 Apache Maven projects (exercises) found in the Source_Code folder of this repository.
 
 ## 01 - refactoring-hands-on
 
@@ -177,6 +177,11 @@ Tenth version of the example. In this version we apply the Rename refactoring to
 ## 11 - refactoring-hands-on
 
 This version of the example replaces the collection class Vector (Vector is an obsolete class) for ArrayList with generics. The concept of generics appeared in Java SE 5, yeas after the release of the book.
+
+
+## 12 - refactoring-hands-on
+
+This version of the example refactors the code by replacing the constants associated with the movie types (REGULAR, NEW_RELEASE, and CHILDREN) for Java SE enum type.
 
 ## Exercise 01 - refactoring-hands-on
 
