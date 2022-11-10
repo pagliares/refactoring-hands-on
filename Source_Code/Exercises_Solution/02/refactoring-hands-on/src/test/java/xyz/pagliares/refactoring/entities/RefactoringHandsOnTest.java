@@ -33,22 +33,22 @@ public class RefactoringHandsOnTest {
         String saidaEsperadaHTMLSemEspacos = saidaEsperadaHTML.replaceAll("\\s", ""); //  \\s is a single space in unicode
 
         // Primeiro filme sendo locado(normal) (Resultado = R$ 2,0 locacao + R$ 4,50 de multa - Total parcial = R$ 6,50)
-        Filme encontros = new Filme("Encontros e Desencontros", 0);
+        Filme encontros = new FilmeNormal("Encontros e Desencontros", 0);
         Locacao loc1 = new Locacao(encontros, 5);
         // Segundo filme sendo locado(Lancamento) (Resultado = R$ 3,0 locacao + R$ 6,00 de multa - Total parcial = R$ 9,00)
-        Filme meia = new Filme("Meia-Noite em Paris           ", 1);
+        Filme meia = new FilmeLancamento("Meia-Noite em Paris           ", 1);
         Locacao loc2 = new Locacao(meia, 3);
 
         // Terceiro filme sendo locado(normal) (Resultado = R$ 2,0 locacao + R$ 1,50 de multa - Total parcial = R$ 3,50)
-        Filme parisTexas = new Filme("Paris, Texas             ", 0);
+        Filme parisTexas = new FilmeNormal("Paris, Texas             ", 0);
         Locacao loc3 = new Locacao(parisTexas, 3);
 
         // Quarto filme sendo locado(lancamento) (Resultado = R$ 3,0 locacao , sem multa - Total parcial = R$ 3,00)
-        Filme indomita = new Filme("Bravura Indômita           ", 1);
+        Filme indomita = new FilmeLancamento("Bravura Indômita           ", 1);
         Locacao loc4 = new Locacao(indomita, 1);
 
         // Quinto filme sendo locado(infantil) (Resultado = R$ 1,50 locacao + R$ 1,50 de multa - Total parcial = R$ 3,00)
-        Filme shrek = new Filme("Shrek                         ", 2);
+        Filme shrek = new FilmeInfantil("Shrek                         ", 2);
         Locacao loc5 = new Locacao(shrek, 4);
 
         cliente.adicionarLocacao(loc1);
@@ -74,22 +74,22 @@ public class RefactoringHandsOnTest {
         String saidaEsperadaSemEspacos = saidaEsperadaTemp.replaceAll("\\s", ""); //  \\s is a single space in unicode
 
         // Primeiro filme sendo locado(normal) (Resultado = R$ 2,0 locacao + R$ 4,50 de multa - Total parcial = R$ 6,50)
-        Filme encontros = new Filme("Encontros e Desencontros", 0);
+        Filme encontros = new FilmeNormal("Encontros e Desencontros", 0);
         Locacao loc1 = new Locacao(encontros, 5);
         // Segundo filme sendo locado(Lancamento) (Resultado = R$ 3,0 locacao + R$ 6,00 de multa - Total parcial = R$ 9,00)
-        Filme meia = new Filme("Meia-Noite em Paris           ", 1);
+        Filme meia = new FilmeLancamento("Meia-Noite em Paris           ", 1);
         Locacao loc2 = new Locacao(meia, 3);
 
         // Terceiro filme sendo locado(normal) (Resultado = R$ 2,0 locacao + R$ 1,50 de multa - Total parcial = R$ 3,50)
-        Filme parisTexas = new Filme("Paris, Texas             ", 0);
+        Filme parisTexas = new FilmeNormal("Paris, Texas             ", 0);
         Locacao loc3 = new Locacao(parisTexas, 3);
 
         // Quarto filme sendo locado(lancamento) (Resultado = R$ 3,0 locacao , sem multa - Total parcial = R$ 3,00)
-        Filme indomita = new Filme("Bravura Indômita           ", 1);
+        Filme indomita = new FilmeLancamento("Bravura Indômita           ", 1);
         Locacao loc4 = new Locacao(indomita, 1);
 
         // Quinto filme sendo locado(infantil) (Resultado = R$ 1,50 locacao + R$ 1,50 de multa - Total parcial = R$ 3,00)
-        Filme shrek = new Filme("Shrek                         ", 2);
+        Filme shrek = new FilmeInfantil("Shrek                         ", 2);
         Locacao loc5 = new Locacao(shrek, 4);
 
         cliente.adicionarLocacao(loc1);
@@ -105,7 +105,7 @@ public class RefactoringHandsOnTest {
     @Test
     public void alugarUmFilmeNormalPor1DiaDeveCustar2ReaisEGerar1PontoLocadorFrequente() {
 
-        Filme encontros = new Filme("Encontros e Desencontros", 0);
+        Filme encontros = new FilmeNormal("Encontros e Desencontros", 0);
         Locacao loc1 = new Locacao(encontros, 1);
         cliente.adicionarLocacao(loc1);
 
@@ -116,7 +116,7 @@ public class RefactoringHandsOnTest {
     @Test
     public void alugarUmFilmeLancamentoPor1DiaDeveCustar3ReaisEGerar1PontoLocadorFrequente() {
 
-        Filme indomita = new Filme("Bravura Indômita           ", 1);
+        Filme indomita = new FilmeLancamento("Bravura Indômita           ", 1);
         Locacao loc4 = new Locacao(indomita, 1);
         cliente.adicionarLocacao(loc4);
 
@@ -127,7 +127,7 @@ public class RefactoringHandsOnTest {
     @Test
     public void alugarUmFilmeInfantilPor1DiaDeveCustar1RealE50CentavosEGerar1PontoLocadorFrequente() {
 
-        Filme shrek = new Filme("Shrek                         ", 2);
+        Filme shrek = new FilmeInfantil("Shrek                         ", 2);
         Locacao loc5 = new Locacao(shrek, 1);
         cliente.adicionarLocacao(loc5);
 
@@ -139,7 +139,7 @@ public class RefactoringHandsOnTest {
     @Test
     public void alugarUmFilmeNormalPor2DiasDeveCustar2ReaisEGerar1PontoLocadorFrequente() {
 
-        Filme encontros = new Filme("Encontros e Desencontros", 0);
+        Filme encontros = new FilmeNormal("Encontros e Desencontros", 0);
         Locacao loc1 = new Locacao(encontros, 1);
         cliente.adicionarLocacao(loc1);
 
@@ -150,7 +150,7 @@ public class RefactoringHandsOnTest {
     @Test
     public void alugarUmFilmeInfantilPor3DiasDeveCustar1RealE50CentavosEGerar1PontoLocadorFrequente() {
 
-        Filme shrek = new Filme("Shrek                         ", 2);
+        Filme shrek = new FilmeInfantil("Shrek                         ", 2);
         Locacao locacao = new Locacao(shrek, 3);
         cliente.adicionarLocacao(locacao);
 
@@ -162,7 +162,7 @@ public class RefactoringHandsOnTest {
     @Test
     public void alugarUmFilmeNormalPor3DiasDeveCustar3ReaisE50CentavosSendo1RealE50CentavosDeMultaEGerar1PontoLocadorFrequente() {
 
-        Filme encontros = new Filme("Encontros e Desencontros", 0);
+        Filme encontros = new FilmeNormal("Encontros e Desencontros", 0);
         Locacao locacao = new Locacao(encontros, 3);
         cliente.adicionarLocacao(locacao);
 
@@ -173,7 +173,7 @@ public class RefactoringHandsOnTest {
     @Test
     public void alugarUmFilmeLancamentoPor2DiasDeveCustar6ReaisSendo3ReaisDeMultaEGerar2PontosLocadorFrequente() {
 
-        Filme indomita = new Filme("Bravura Indômita           ", 1);
+        Filme indomita = new FilmeLancamento("Bravura Indômita           ", 1);
         Locacao locacao = new Locacao(indomita, 2);
         cliente.adicionarLocacao(locacao);
 
@@ -184,7 +184,7 @@ public class RefactoringHandsOnTest {
     @Test
     public void alugarUmFilmeLancamentoPor5DiaDeveCustar15ReaisSendo12ReaisDeMultaEGerar2PontosLocadorFrequente() {
 
-        Filme meia = new Filme("Meia-Noite em Paris           ", 1);
+        Filme meia = new FilmeLancamento("Meia-Noite em Paris           ", 1);
         Locacao loc1 = new Locacao(meia, 5);
         cliente.adicionarLocacao(loc1);
 
@@ -195,7 +195,7 @@ public class RefactoringHandsOnTest {
     @Test
     public void alugarUmFilmeInfantilPor4DiasDeveCustar3ReaisSendo1RealE50CentavosDeMultaEGerar1PontoLocadorFrequente() {
 
-        Filme shrek = new Filme("Shrek                         ", 2);
+        Filme shrek = new FilmeInfantil("Shrek                         ", 2);
         Locacao loc5 = new Locacao(shrek, 4);
         cliente.adicionarLocacao(loc5);
 
