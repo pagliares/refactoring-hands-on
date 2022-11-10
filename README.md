@@ -173,4 +173,4 @@ In this exercise, the student must evolve version 8 of the software to implement
     <img src="UML_Diagrams/Exercises_Solution/02/Class_Diagram.png" alt="UML Class diagram">
 </p>
 
-
+Important: This solution is worse than the solution provided in examples 09.1, 09.2, 09.3, and 09.4. Why?
