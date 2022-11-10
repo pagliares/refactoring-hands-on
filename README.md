@@ -165,5 +165,12 @@ The solution for the exercise is presented at the Maven Project located at folde
 
 ## Exercise 02 - refactoring-hands-on
 
-In this exercise, the student must evolve version 8 of the software to implement an alternative solution (different from solutions for versions 09.1, 09.2, 09.3, and 09.4). In this exercise, the student must implement the design shown in the UML class diagram below.   
+In this exercise, the student must evolve version 8 of the software to implement an alternative solution (different from solutions for versions 09.1, 09.2, 09.3, and 09.4). In this exercise, the student must implement the design shown in the UML class diagram below. 
+
+### UML Class Diagram:
+
+<p align="center">
+    <img src="UML_Diagrams/Exercises_Solution/02/Class_Diagram.png" alt="UML Class diagram">
+</p>
+
 
