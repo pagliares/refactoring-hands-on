@@ -183,6 +183,12 @@ This version of the example replaces the collection class Vector (Vector is an o
 
 This version of the example refactors the code by replacing the constants associated with the movie types (REGULAR, NEW_RELEASE, and CHILDREN) for Java SE enum type.
 
+### UML Class Diagram:
+
+<p align="center">
+    <img src="UML_Diagrams/12/Class_Diagram.png" alt="UML Class diagram">
+</p>
+
 ## Exercise 01 - refactoring-hands-on
 
 In this exercise, the student must evolve version 09.4 of the software to incorporate one more type of movie: Musical. Musical films cost R$ 2.00 per rental with the right to keep the film for 2 days. For Musical type movies, the fine and frequent rental points are calculated as follows:
