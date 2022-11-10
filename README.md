@@ -154,3 +154,13 @@ I strongly suggest the students compare the UML Class and Sequence Diagrams of t
 <p align="center">
     <img src="UML_Diagrams/09/09_04/Sequence_Diagram.png" alt="UML Sequence diagram">
 </p>
+
+## Exercise 01 - refactoring-hands-on
+
+In this exercise, the student must evolve version 09.4 of the software to incorporate one more type of movie: Musical. Musical films cost R$ 2.00 per rental with the right to keep the film for 2 days. For Musical type movies, the fine and frequent rental points are calculated as follows:
+   - R$ 1.50 fine, per day of delay if delivered after 2 days.
+   - Each rented movie counts 1 frequent renter point.
+
+The solution for the exercise is presented at the Maven Project located at folder Source_Code/Exercise_Solution/01/refactoring-hands-on.
+   
+
